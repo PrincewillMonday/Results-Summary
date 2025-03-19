@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: hsl(0, 0%, 100%);
+}
+
+/* The main Container */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+p {
+    color: hsl(221, 100%, 96%);
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+    color: hsl(0, 0%, 100%);
+}
+h3 {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+.content {
+    display: flex;
+    /* background: orange; */
+    box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+.content,.circle p {
+    padding-top: 5px;
+}
+
+.content,.result-div p {
+    margin-bottom: 20px;
+}
+
+/* Result Div Session */
+.result-div {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    border-radius: 20px;
+    padding: 30px;
+}
+.text {
+    width: 250px;
+    font-weight: lighter;
+}
+.circle {
+    background: radial-gradient(circle at top,hsla(256, 72%, 46%, 1) 50%,
+    rgba(10, 10, 100, 0.3) 80%,
+    rgba(10, 10, 100, 0) 100%);
+    border-radius: 50%;
+    padding: 50px;
+}
+
+
+.summary-div {
+    background: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 0 20px 20px 0;
+}
+.summary-div p {
+    color: hsl(224, 30%, 27%);
+}
+
+/* This is for reaction */
+.reaction {
+    display: flex;
+    background: hsl(0, 85%, 92%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.reaction-text {
+    margin-left: 20px;
+    color: hsl(0, 100%, 67%);
+}
+
+/* This is for memory */
+.memory {
+    display: flex;
+    background: hsl(39, 79%, 89%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.memory-text {
+    margin-left: 20px;
+    color: hsl(39, 100%, 56%);
+}
+
+/* This is for verbal */
+.verbal {
+    display: flex;
+    background: hsl(166, 83%, 93%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.verbal-text {
+    margin-left: 20px;
+    color: hsl(166, 100%, 37%);
+}
+
+/* This is for visual */
+.visual {
+    display: flex;
+    background: hsl(234, 87%, 91%);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.visual-text {
+    margin-left: 20px;
+    color: hsl(234, 85%, 45%);
+}
+
+/* These are the different ratings for each divs */
+.rating {
+    margin-left: 60px;
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+.rating-memory {
+    margin-left: 70px;
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+.rating-verbal {
+    margin-left: 80px;
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+.rating-visual {
+    margin-left: 80px;
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+.hundred {
+    font-weight: 500;
+}
+
+button {
+    background: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px 100px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 80px;
+    cursor: pointer;
+}
+button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:1440px){
+    body {
+        background: hsl(0, 0%, 100%);
+    }
+    
+    /* The main Container */
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    p {
+        color: hsl(221, 100%, 96%);
+        font-size: 18px;
+    }
+    
+    h1 {
+        font-size: 80px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 10px;
+        color: hsl(0, 0%, 100%);
+    }
+    h3 {
+        font-size: 25px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: hsl(0, 0%, 100%);
+    }
+    
+    .content {
+        display: flex;
+        /* background: orange; */
+        box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 30px;
+    }
+    
+    .content,.circle p {
+        padding-top: 5px;
+    }
+    
+    .content,.result-div p {
+        margin-bottom: 20px;
+    }
+    
+    /* Result Div Session */
+    .result-div {
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        text-align: center;
+        border-radius: 20px;
+        padding: 30px;
+    }
+    .text {
+        width: 250px;
+        font-weight: lighter;
+    }
+    .circle {
+        background: radial-gradient(circle at top,hsla(256, 72%, 46%, 1) 50%,
+        rgba(10, 10, 100, 0.3) 80%,
+        rgba(10, 10, 100, 0) 100%);
+        border-radius: 50%;
+        padding: 50px;
+    }
+    
+    
+    .summary-div {
+        background: hsl(0, 0%, 100%);
+        padding: 30px;
+        border-radius: 0 20px 20px 0;
+    }
+    .summary-div p {
+        color: hsl(224, 30%, 27%);
+        font-weight: 700;
+    }
+    
+    /* This is for reaction */
+    .reaction {
+        display: flex;
+        background: hsl(0, 85%, 92%);
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    .reaction-text {
+        margin-left: 20px;
+        color: hsl(0, 100%, 67%);
+    }
+    
+    /* This is for memory */
+    .memory {
+        display: flex;
+        background: hsl(39, 79%, 89%);
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    .memory-text {
+        margin-left: 20px;
+        color: hsl(39, 100%, 56%);
+    }
+    
+    /* This is for verbal */
+    .verbal {
+        display: flex;
+        background: hsl(166, 83%, 93%);
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    .verbal-text {
+        margin-left: 20px;
+        color: hsl(166, 100%, 37%);
+    }
+    
+    /* This is for visual */
+    .visual {
+        display: flex;
+        background: hsl(234, 87%, 91%);
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    .visual-text {
+        margin-left: 20px;
+        color: hsl(234, 85%, 45%);
+    }
+    
+    /* These are the different ratings for each divs */
+    .rating {
+        margin-left: 60px;
+        color: hsl(224, 30%, 27%);
+        font-weight: 700;
+    }
+    .rating-memory {
+        margin-left: 70px;
+        color: hsl(224, 30%, 27%);
+        font-weight: 700;
+    }
+    .rating-verbal {
+        margin-left: 80px;
+        color: hsl(224, 30%, 27%);
+        font-weight: 700;
+    }
+    .rating-visual {
+        margin-left: 80px;
+        color: hsl(224, 30%, 27%);
+        font-weight: 700;
+    }
+    .hundred {
+        font-weight: 500;
+    }
+    
+    button {
+        background: hsl(224, 30%, 27%);
+        color: hsl(0, 0%, 100%);
+        padding: 10px 100px;
+        border-radius: 50px;
+        border: none;
+        margin-top: 80px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+    
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+}
+@media (max-width:375px){
+    body {
+        background: hsl(0, 0%, 100%);
+    }
+    
+    /* The main Container */
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    p {
+        color: hsl(221, 100%, 96%);
+        font-size: 18px;
+    }
+    
+    h1 {
+        font-size: 80px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 10px;
+        color: hsl(0, 0%, 100%);
+    }
+    h3 {
+        font-size: 25px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: hsl(0, 0%, 100%);
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 410px;
+    }
+    
+    .content,.circle p {
+        padding-top: 5px;
+    }
+    
+    .content,.result-div p {
+        margin-bottom: 10px;
+    }
+    
+    /* Result Div Session */
+    .result-div {
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        text-align: center;
+        border-radius: 0 0 20px 20px;
+        padding: 30px;
+        height: 50%;
+        /* margin-top: 450px; */
+    }
+    .text {
+        width: 300px;
+        font-weight: lighter;
+    }
+    .circle {
+        background: radial-gradient(circle at top,hsla(256, 72%, 46%, 1) 50%,
+        rgba(10, 10, 100, 0.3) 80%,
+        rgba(10, 10, 100, 0) 100%);
+        border-radius: 100%;
+        padding: 80px;
+    }
+    
+    
+    .summary-div {
+        background: hsl(0, 0%, 100%);
+        padding: 30px;
+        border-radius: 0 20px 20px 0;
+    }
+    .summary-div p {
+        color: hsl(224, 30%, 27%);
+        font-weight: 700;
+    }
+    
+    /* This is for reaction */
+    .reaction {
+        display: flex;
+        background: hsl(0, 85%, 92%);
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    .reaction-text {
+        margin-left: 20px;
+        color: hsl(0, 100%, 67%);
+    }
+    
+    /* This is for memory */
+    .memory {
+        display: flex;
+        background: hsl(39, 79%, 89%);
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    .memory-text {
+        margin-left: 20px;
+        color: hsl(39, 100%, 56%);
+    }
+    
+    /* This is for verbal */
+    .verbal {
+        display: flex;
+        background: hsl(166, 83%, 93%);
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    .verbal-text {
+        margin-left: 20px;
+        color: hsl(166, 100%, 37%);
+    }
+    
+    /* This is for visual */
+    .visual {
+        display: flex;
+        background: hsl(234, 87%, 91%);
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    .visual-text {
+        margin-left: 20px;
+        color: hsl(234, 85%, 45%);
+    }
+    
+    /* These are the different ratings for each divs */
+    .rating {
+        margin-left: 130px;
+        color: hsl(224, 30%, 27%);
+        font-weight: 700;
+    }
+    .rating-memory {
+        margin-left: 135px;
+        color: hsl(224, 30%, 27%);
+        font-weight: 700;
+    }
+    .rating-verbal {
+        margin-left: 150px;
+        color: hsl(224, 30%, 27%);
+        font-weight: 700;
+    }
+    .rating-visual {
+        margin-left: 150px;
+        color: hsl(224, 30%, 27%);
+        font-weight: 700;
+    }
+    .hundred {
+        font-weight: 500;
+    }
+    
+    button {
+        background: hsl(224, 30%, 27%);
+        color: hsl(0, 0%, 100%);
+        padding: 20px 130px;
+        border-radius: 50px;
+        border: none;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+}
